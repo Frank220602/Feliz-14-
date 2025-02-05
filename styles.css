@@ -695,8 +695,8 @@ main {
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     overflow: hidden;
-    max-width: 300px;
-    margin: 20px auto;
+    max-width: 330px;
+    margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: var(--color-background);
     color: var(--color-text);
@@ -845,5 +845,17 @@ audio {
 
     .hamburger-button {
         display: flex; /* Mostrar en móviles */
+    }
+}
+
+@media (max-width: 768px) {
+    .music-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .music-container {
+        grid-template-columns: 1fr; /* 1 tarjeta por fila en móviles */
     }
 }
