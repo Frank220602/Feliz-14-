@@ -687,7 +687,7 @@ main {
 /* Estilos para la tarjeta de música */
 .music-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr)); /*auto-fit en lugar de 4 (para que se agregue automaticamente al tamaño de la pantalla)*/
     gap: 10px;
     padding: 20px;
 }
