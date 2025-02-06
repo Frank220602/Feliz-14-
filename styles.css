@@ -1,15 +1,15 @@
 /**
  * DetalleParaTi
  * 
- * Este es una para que puedas dedicar a tu pareja o algun apersona en 
+ * Esta pagina web es para que puedas dedicar a tu pareja o algun apersona en 
   especial el cual tu quieras mucho y guardaras recuerdos que pasaste con esa persona.
  * 
- * Hecho por: [LuisKinnDC]
- * Fecha: [26 DE FEBRERO]
+ * Hecho por: [Frank220602]
+ * Fecha: [06 DE FEBRERO]
  * Versión: 1.0
  * 
  * GitHub:
- * - https://github.com/LuisKinnDC
+ * - https://github.com/Frank220602
 
  */
 
@@ -472,8 +472,6 @@ main {
 }
 
 /* Estilos para la galería de fotos */
-
-
 .gallery img {
     width: 100%;
     border-radius: var(--border-radius);
@@ -687,7 +685,7 @@ main {
 /* Estilos para la tarjeta de música */
 .music-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /*auto-fit en lugar de 4 (para que se agregue automaticamente al tamaño de la pantalla)*/
+    grid-template-columns: repeat(4, 1fr);; /*auto-fit en lugar de 4 (para que se agregue automaticamente al tamaño de la pantalla)*/
     gap: 10px;
     padding: 20px;
 }
@@ -700,7 +698,21 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: var(--color-background);
     color: var(--color-text);
+    margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    .music-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .music-container {
+        grid-template-columns: 1fr; /* 1 tarjeta por fila en móviles */
+    }
+}
+
 
 .music-image img {
     width: 100%;
@@ -845,17 +857,5 @@ audio {
 
     .hamburger-button {
         display: flex; /* Mostrar en móviles */
-    }
-}
-
-@media (max-width: 768px) {
-    .music-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila en pantallas medianas */
-    }
-}
-
-@media (max-width: 480px) {
-    .music-container {
-        grid-template-columns: 1fr; /* 1 tarjeta por fila en móviles */
     }
 }
