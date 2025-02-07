@@ -97,7 +97,7 @@ window.addEventListener("load", () => {
     // Mostrar el número de años, meses y días en el dashboard
     document.getElementById(
       "daysCount"
-    ).innerText = `Ya han pasado ${years} ${yearText}, ${months} ${monthText} y ${days} ${dayText}, desde que comenzó nuestra historia de amor. Me alegra mucho estar aún a tu lado y disfrutar cada momento, eres la persona que amaré de por vida. ¡Te Amoo❤️!`;
+    ).innerText = `Ya han pasado ${years} ${yearText}, ${months} ${monthText} y ${days} ${dayText}, desde que comenzó nuestra historia de amor. Me alegra mucho estar aún a tu lado y disfrutar cada momento, eres la persona que alegra mis dias y me da paz. ¡Te Amoo❤️!`;
   }
 });
 
